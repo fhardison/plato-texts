@@ -2,8 +2,8 @@
     "SRC_PATTERN": "./text/{source}.txt",
     "OUTPUT_DIRECTORY": "docs/",
     "collection": "Plato",
-    "subtitle": "Converted to GLTP format by James Tauber",
-    "repo_link": "https://github.com/jtauber/plato-texts",
+    "subtitle": "Converted to GLTP format by James Tauber with Alpheios added",
+    "repo_link": "https://github.com/hardison/plato-texts",
     "works": [
         {
             "source": "euthyphro",

@@ -1,46 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{% block lang %}{% endblock %}">
   <head>
-    <title>Plato</title>
+    <title>{% block head_title %}{% endblock %}</title>
     <meta charset="utf-8">
     <link href="default.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alpheios-components@latest/dist/style/style-components.min.css"/>
 
-    
+    {% block extra_head %}{% endblock %}
   </head>
-  <body class="default">
+  <body class="{% block body_class %}default{% endblock %}">
     <div class="container">
-      
-  <h1>Plato</h1>
-
-  <h2>Converted to GLTP format by James Tauber with Alpheios added</h2>
-
-  <ul>
-    
-      <li><a href="./euthyphro.html">Euthyphro</a></li>
-    
-      <li><a href="./crito.html">Crito</a></li>
-    
-      <li><a href="./meno.html">Meno</a></li>
-    
-      <li><a href="./phaedo.html">Phaedo</a></li>
-    
-      <li><a href="./ion.html">Ion</a></li>
-    
-      <li><a href="./apology.html">Apology</a></li>
-    
-      <li><a href="./symposium.html">Symposium</a></li>
-    
-      <li><a href="./republic.html">Republic</a></li>
-    
-  </ul>
-
-  
-  <p>
-    The source is available at <a href="https://github.com/hardison/plato-texts">https://github.com/hardison/plato-texts</a>.
-  </p>
-  
-
+      {% block content %}{% endblock %}
     </div>
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function(event) {

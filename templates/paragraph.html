@@ -1,0 +1,8 @@
+<div class="paragraph">
+  <span class="ref">{{ n }}</span>
+  {% for n, node in node.children.items() %}
+    {% if n != "00" %}
+    {% include node.kind + ".html" %}
+    {% endif %}
+  {% endfor %}
+</div>
